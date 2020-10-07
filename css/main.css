@@ -125,11 +125,11 @@ textarea {
   .aboutUs{
     background-color: #4e7082;
     /* height: 500px; */
-    transform: skew(0deg, 2deg) translateY(-50px);
+    transform: skew(0deg, 3deg) translateY(-50px);
   }
   
   .aboutUs .aboutContent{
-    transform: skew(0deg, -2deg);
+    transform: skew(0deg, -3deg);
     padding: 0 10%;
   }
 
@@ -159,15 +159,16 @@ textarea {
 
   .contact{
     /* height: 65vh; */
-    margin-top: -30px;
     position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-image: url('../img/agreement-businessman-close-up-872957.jpg');
-    /* padding-top: 40px; */
-    /* transform: skew(0deg, 2deg); */
+    /* padding-top: -40px; */
+
+    /* margin-top: -10%; */
+
   }
   
   /* .contact form, .contact h1{
@@ -180,19 +181,30 @@ textarea {
     /* padding-top: 5%; */
     font-size: 3em;
     /* padding-bottom: .2em; */
-    color: #ffffff;
+    /* color: #ffffff; */
     /* text-shadow: 4px 4px 15px #000000; */
-    /* text-shadow: 4px 4px 15px #ffffff; */
+    text-shadow: 4px 4px 75px #ffffff;
+    transform: skew(0deg, -3deg);
+
   }
 
-  .contact p {
-    font-size: 1.15em;
-  }
-  
-  .contact form{
-    padding: 2% 25%;
-    margin: 0 -2% 0 -2%;
+  .contact .contactContent{
+    padding: 3% 10%;
+
+    margin: 5% 15%;
+    /* margin-top: 5%; */
+    /* width: 99vw; */
     background-color: rgba(125, 126, 127, .9);
+    transform: skew(0deg, 3deg);
+
+  }
+
+  .contact form{
+    /* padding: 2% 25%; */
+    /* margin: 0 -2% 0 -2%; */
+    /* background-color: rgba(125, 126, 127, .9); */
+    transform: skew(0deg, -3deg);
+  
   }
   
   .contact form label {
