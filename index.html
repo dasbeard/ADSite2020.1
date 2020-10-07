@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Document</title>
+
+    <!-- <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content=""> -->
+  
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- <meta name="theme-color" content="#fafafa"> -->
+
+  </head>
+  <body>
+    
+    <!-- <p>Hello world! This is HTML5 Boilerplate.</p> -->
+
+<!-- -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~- -->
+
+<section class="container-fluid header">
+  <div class="slogan col-12">
+    <img src='./img/A-&-B-mini.png' alt='A&B Logo' />
+  </div>
+</section>
+
+
+<section class="container-fluid bottomSection">
+
+  <div class="container-fluid aboutUs">
+    <div class="row test">
+
+      <div class="container aboutContent">
+        <div class="row">
+          <h1 class="col-12 container-fluid text-center">About Us</h1>
+        </div>
+        <div class="row">
+
+          <p class="text-center">At A&B Marketing we help you create exposure by designing customer friendly websites at affordable
+            prices
+            to
+            help increase your online presence. We sit with each client and after assessing what your needs are, we
+            can
+            design and formulate a site for your individual needs. Our clients are not only sure to receive a website
+            that increases traffic and sales, but also a website that represents their needs.
+          </p>
+        </div>
+        <div class='container-fluid aboutPoints'>
+          <div class="row iconRow">
+            <div class="col-sm-4 text-center">
+              <img src="./img/shopify_glyph.png" alt="">
+              <p>
+                Shopify
+              </p>
+            </div>
+
+            <div class="col-sm-4 text-center">
+              <img src="./img/CustomSites.png" alt="">
+              <p>
+                Custom Sites
+              </p>
+            </div>
+
+
+            <div class="col-sm-4 text-center">
+              <img src="./img/WordPress-logotype-simplified.png" alt="">
+              <p>
+                Wordpress
+              </p>
+            </div>
+          </div>
+
+          <div class="row iconRow">
+            <div class="col-sm-offset-2 col-sm-4 text-center">
+              <img src="./img/Google_Ads_logo.png" alt="">
+              <!-- <p>
+                Google AdWords
+              </p> -->
+            </div>
+
+            <div class="col-sm-4 text-center">
+              <img src="./img/analytics_icon.png" alt="">
+              <!-- <p>
+                Analytics
+              </p> -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container-fluid contact">
+    <h1 class="col-12">Contact Us</h1>
+    
+
+        <form name="theform" class="form-inline container-fluid">
+
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="Name">Name</label>
+              <input type="text" onkeyup="checkform()" id="Name" placeholder="Jane Doe">
+            </div>
+            
+            <div class="second col-sm-6 second">
+              <label for="Type">Interested In</label>
+              <select id="Type" onkeyup="checkform()" class="form-group selector">
+                <option value=""></option>
+                <option value="Personal Site">Personal Website</option>
+                <option value="Business Site">Buisiness Website</option>
+                <option value="E-Commerce">E-Commerce</option>
+                <option value="Marketing">Analytics/ Google AdWords</option>
+              </select>
+            </div>
+            
+          </div>
+          
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="Phone">Phone Number</label>
+              <input type="tel" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" onkeyup="checkform()" class="form-control" id="Phone">
+            </div>
+            
+          </div>
+          
+          
+          <div class="row">
+            <div class="form-group col-sm-6">
+              <label for="Email">Email</label>
+              <input type="email" name="email" onkeyup="checkform()" class="form-control" id="email" placeholder="jane.doe@example.com">
+            </div>
+
+            <div class="form-group col-sm-6 second aboutProj">
+              <label class="col-5" for="AboutProj">Tell us About Your Project</label>
+              <textarea onkeyup="checkform()" class="form-control" rows="3" name="projInfo" id="AboutProj"></textarea>
+            </div>
+          </div>
+          
+
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <input id="submitbutton" type="submit" value="Submit" class="btn btn-warning text-center"/>
+          </div>
+        </div>
+
+      </form>
+  </div>
+
+</section>
+
+
+
+
+<section class="bottom"></section>
+
+
+
+
+<!-- -~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~- -->
+
+
+
+
+    <script src="js/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!-- <script>
+      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+
+  </body>
+</html>
