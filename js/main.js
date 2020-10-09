@@ -13,3 +13,8 @@ function checkform() {
   document.getElementById('submitbutton').disabled = !cansubmit;
 }
 window.onload = checkform;
+
+document.getElementById('submitbutton').addEventListener('click', function(e){
+  e.preventDefault();
+  console.log('clicky');
+})
